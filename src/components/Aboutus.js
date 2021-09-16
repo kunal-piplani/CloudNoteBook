@@ -4,17 +4,25 @@ import noteContext from '../context/note/noteContext'
 import { useEffect } from 'react'
 function Aboutus() {
 
-    const a =useContext(noteContext)
+    // const a =useContext(noteContext)
 
-    useEffect(() => {
-        a.update();
+    // useEffect(() => {
+    //     a.update();
         
-    }, [])
-    return (
+    // }, [])
+    // return (
+    //     <div>
+    //         This is about us ,{a.state.name}
+    //     </div>
+    // )
+
+return (
         <div>
-            This is about us ,{a.state.name}
+            This is about us Page 
         </div>
     )
+
+
 }
 
 export default Aboutus

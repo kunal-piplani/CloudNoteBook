@@ -10,23 +10,32 @@ const s1={
 
 const [state,setState] =useState(s1);
 
-const update =()=>{
+// const update =()=>{
 
 
-    setTimeout(() => {
-        setState({
-        "name":"nairobi",
-        "class":"Good "
-        })
-    }, 1000);
-}
+//     setTimeout(() => {
+//         setState({
+//         "name":"nairobi",
+//         "class":"Good "
+//         })
+//     }, 1000);
+// }
 
+// return(
+// <NoteContext.Provider value ={{state,update}}>
+// {props.children}
+// </NoteContext.Provider>
+
+
+// )
 return(
-<NoteContext.Provider value ={{state,update}}>
+<NoteContext.Provider value ={{}}>
 {props.children}
 </NoteContext.Provider>
 
 
 )
+
+
 }
 export default NoteState
