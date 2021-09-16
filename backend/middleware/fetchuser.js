@@ -14,7 +14,7 @@ try {
     req.user=data.user;
         next();  
 } catch (error) {
-    res.send(401);
+    res.status(401).send({error:"access denied,please Create User and Then try again  "});
 }
 
 }
