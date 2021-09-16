@@ -28,8 +28,50 @@ const [state,setState] =useState(s1);
 
 
 // )
+
+
+const notesinitial = [
+    {
+      "_id": "6142f0f4bf3b65144812ff22",
+      "user": "6142cd53a89ef3272511f916",
+      "title": "my title",
+      "description": "las pa rel ",
+      "tag": "Bella Ciao",
+      "date": "2021-09-16T07:23:32.424Z",
+      "__v": 0
+    },
+    {
+      "_id": "6142f116bf3b65144812ff27",
+      "user": "6142cd53a89ef3272511f916",
+      "title": "my title",
+      "description": "las pa rel ",
+      "tag": "Bella Ciao",
+      "date": "2021-09-16T07:24:06.733Z",
+      "__v": 0
+    },
+    {
+      "_id": "6142f118bf3b65144812ff29",
+      "user": "6142cd53a89ef3272511f916",
+      "title": "my title",
+      "description": "las pa rel ",
+      "tag": "Bella Ciao",
+      "date": "2021-09-16T07:24:08.802Z",
+      "__v": 0
+    },
+    {
+      "_id": "6142f11bbf3b65144812ff2b",
+      "user": "6142cd53a89ef3272511f916",
+      "title": "my title",
+      "description": "las pa rel ",
+      "tag": "Bella Ciao",
+      "date": "2021-09-16T07:24:11.328Z",
+      "__v": 0
+    }
+  ]
+
+const [notes, setNotes] = useState(notesinitial)
 return(
-<NoteContext.Provider value ={{}}>
+<NoteContext.Provider value ={{notes,setNotes}}>
 {props.children}
 </NoteContext.Provider>
 
